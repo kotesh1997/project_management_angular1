@@ -1,0 +1,45 @@
+<div class="flex flex-col flex-auto min-w-0">
+  <div class="flex flex-cols pt-2">
+    <!-- Summary Cards -->
+    <div class="px-8 pt-2">
+      <div style="height: 425px !important;" class="w-60 p-2 bg-card">
+        <div><b>Project Reports</b></div>
+        <mat-divider class="my-2"></mat-divider>
+        <div class="flex flex-cols justify-between">
+          <div class="text-secondary">Total Projects</div>
+          <div>{{ totalprojects }}</div>
+        </div>
+        <mat-divider class="my-2"></mat-divider>
+        <div class="flex flex-cols justify-between">
+          <div class="text-secondary">Total Tasks</div>
+          <div>{{ totaltasks }}</div>
+        </div>
+        <mat-divider class="my-2"></mat-divider>
+        <div class="flex flex-cols justify-between">
+          <div class="text-secondary">Total Revenue</div>
+          <div>₹ {{ totalrevenue }}</div>
+        </div>
+        <mat-divider class="my-2"></mat-divider>
+        <div class="flex flex-cols justify-between">
+          <div class="text-secondary">Total Client Revenue</div>
+          <div>₹ {{ clientrevenue }}</div>
+        </div>
+        <mat-divider class="my-2"></mat-divider>
+        <div class="flex flex-cols justify-between">
+          <div class="text-secondary">Active Projects</div>
+          <div>{{ activeprojects }}</div>
+        </div>
+        <mat-divider class="my-2"></mat-divider>
+        <div class="flex flex-cols justify-between">
+          <div class="text-secondary">Inactive Projects</div>
+          <div>{{ inactiveprojects }}</div>
+        </div>
+        <mat-divider class="my-2"></mat-divider>
+      </div>
+    </div>
+    <!-- Chart -->
+    <div class="bg-card mt-2 mr-7" style="width: 940px !important; height: 425px !important;">
+      <canvas #barChart class="pt-4" width="940" height="425"></canvas>
+    </div>
+  </div>
+</div>
